@@ -11,3 +11,12 @@
     background-color: blanchedalmond;
     text-align: center;
 }
+
+.user-show img {
+    width: 250px;
+    height: 250px;
+}
+#userprofile{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
