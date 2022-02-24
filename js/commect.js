@@ -7,16 +7,27 @@ const loadComment = () =>{
 const displayComment = comments =>{
     console.log(comments)
     const commentElement = document.getElementById('displaycomment');
-    for (const coment of comments){
+    comments.forEach (comment =>{
         const div = document.createElement('div')
         div.classList.add('commentshow');
         div.innerHTML = `
-        <h2>Name : ${coment.name}</h2>
-        <h3>Email: ${coment.email}</h3>
-        <h4>Commet: ${coment.body}</h4>
+        <h2>Name : ${comment.name}</h2>
+        <h3>Email: ${comment.email}</h3>
+        <h4>Commet: ${comment.body}</h4>
         
         `;
         commentElement.appendChild(div);
+    })
+
+    // for (const coment of comments){
+    //     const div = document.createElement('div')
+    //     div.classList.add('commentshow');
+    //     div.innerHTML = `
+    //     <h2>Name : ${coment.name}</h2>
+    //     <h3>Email: ${coment.email}</h3>
+    //     <h4>Commet: ${coment.body}</h4>
+        
+    //     `;
+        
     }
 
-}
